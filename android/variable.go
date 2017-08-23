@@ -20,6 +20,8 @@ import (
 	"runtime"
 	"strings"
 
+	"aosp/soong/android"
+
 	"github.com/google/blueprint/proptools"
 )
 
@@ -147,6 +149,9 @@ type variableProperties struct {
 			Srcs         []string `android:"arch_variant"`
 			Exclude_srcs []string `android:"arch_variant"`
 		} `android:"arch_variant"`
+
+		// include Aosp variables
+		Aosp android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -394,6 +399,9 @@ type productVariables struct {
 	SelinuxIgnoreNeverallows bool `json:",omitempty"`
 
 	SepolicySplit bool `json:",omitempty"`
+
+	// include Aosp variables
+	Aosp android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
