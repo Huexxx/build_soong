@@ -97,6 +97,7 @@ var Configuration = map[string]PathConfig{
 	"sh":      Allowed,
 	"tr":      Allowed,
 	"unzip":   Allowed,
+	"zcat":    Allowed,
 	"zip":     Allowed,
 
 	// Allow prebuilts/gcc/ compilation chain
