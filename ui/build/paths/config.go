@@ -99,6 +99,8 @@ var Configuration = map[string]PathConfig{
 	"unzip":   Allowed,
 	"zcat":    Allowed,
 	"zip":     Allowed,
+	"clang-13": Allowed,
+	"clang-14": Allowed,
 
 	// Allow prebuilts/gcc/ compilation chain
 	"aarch64-linux-android-addr2line":    Allowed,
@@ -107,7 +109,7 @@ var Configuration = map[string]PathConfig{
 	"aarch64-linux-android-c++filt":      Allowed,
 	"aarch64-linux-android-dwp":          Allowed,
 	"aarch64-linux-android-elfedit":      Allowed,
-        "aarch64-linux-android-gcc":          Allowed,
+	"aarch64-linux-android-gcc":          Allowed,
 	"aarch64-linux-android-gcc-ar":       Allowed,
 	"aarch64-linux-android-gcc-nm":       Allowed,
 	"aarch64-linux-android-gcc-ranlib":   Allowed,
@@ -132,7 +134,7 @@ var Configuration = map[string]PathConfig{
 	"arm-linux-androideabi-cpp":          Allowed,
 	"arm-linux-androideabi-dwp":          Allowed,
 	"arm-linux-androideabi-elfedit":      Allowed,
-        "arm-linux-androideabi-gcc":          Allowed,
+	"arm-linux-androideabi-gcc":          Allowed,
 	"arm-linux-androideabi-gcc-ar":       Allowed,
 	"arm-linux-androideabi-gcc-nm":       Allowed,
 	"arm-linux-androideabi-gcc-ranlib":   Allowed,
@@ -150,6 +152,18 @@ var Configuration = map[string]PathConfig{
 	"arm-linux-androideabi-size":         Allowed,
 	"arm-linux-androideabi-strings":      Allowed,
 	"arm-linux-androideabi-strip":        Allowed,
+	"arm-linux-androidkernel-ar":         Allowed,
+	"arm-linux-androidkernel-as":         Allowed,
+	"arm-linux-androidkernel-cpp":        Allowed,
+	"arm-linux-androidkernel-elfedit":    Allowed,
+	"arm-linux-androidkernel-gcc":        Allowed,
+	"arm-linux-androidkernel-ld":         Allowed,
+	"arm-linux-androidkernel-nm":         Allowed,
+	"arm-linux-androidkernel-objcopy":    Allowed,
+	"arm-linux-androidkernel-objdump":    Allowed,
+	"arm-linux-androidkernel-readelf":    Allowed,
+	"arm-linux-androidkernel-size":       Allowed,
+	"arm-linux-androidkernel-strip":      Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
